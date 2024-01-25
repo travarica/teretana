@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <div class="kocka3"></div>
+        <div class="welcomeback">
+            <span style="color: #0075FF; -webkit-text-stroke-color: #0075FF; -webkit-text-stroke-width: 0.7px;" >WELCOME</span></b> BACK!
+        </div>
+        <div class="emailorusername"> Email or username</div>
+        <div class="sifra">Password</div>
+        <form action="">
+            <div class="eouinput">
+                <input type="text" required maxlength="25">
+                <i class='bx bx-user'></i>
+            </div>
+            <div class="passwordinput">
+                <input type="password" required maxlength="8" minlength="0" id="password">
+                <i class='bx bx-lock-alt' id="zatvoreno" onclick="myFunction(this)"></i>
+            </div>
+            <div class="forgotpassword">
+                <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit" class="login">LOGIN</button>
+            <div class="signupdonthave">
+                <p><span style="opacity: 0.7; ">Dont have an account?</span>
+                <a href="#" style="-webkit-text-stroke-color: #0075FF; -webkit-text-stroke-width: 0.3px;">Sign Up Now</a></p>
+            </div>
+        </form>
+       <div class="line1"></div>
+       <div class="or"> Or </div>
+       <div class="line2"></div>
+    </div>
+    
+<script>
+let zatvoreno = document.getElementById("zatvoreno");
+let password = document.getElementById("password");
+
+zatvoreno.onclick = function(){
+    if(password.type == "password"){
+        password.type = "text";
+        
+    } else{
+        password.type = "password";
+    }
+    myFunction(zatvoreno);
+}
+
+function myFunction(x) {
+  x.classList.toggle('bx-lock-alt');
+  x.classList.toggle('bx-lock-open-alt');
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,565 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    background-image: url('gallery/milad-fakurian-7wUorDiCMSU-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.header{
+    position: absolute;
+    top: -5%;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    width: 10%;
+    position: relative;
+    left: -2.5%;
+    
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    margin-left: 60px;
+    font-weight: 500;
+
+}
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 1.5px;
+    background: darkblue;
+    transition: 0.2s;
+}
+.navbar a:hover::before{
+    width: 100%;
+}
+
+.sekcija{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    
+    align-items: start;
+    position: relative;
+}
+.naslov{
+    position: absolute;
+    top: 25%;
+    left: 7.5%;
+    font-size: 75px;
+    display: block;
+    color: #0651a6;
+}
+.statiska{
+    position: absolute;
+    top: 50%;
+    left: 7.5%;
+    color: #000;
+    display: block;
+    margin-top: 20px;
+
+}
+.getstarted{
+   position: absolute;
+   left: 7.5%;
+   top: 70%;
+   width: 135px;
+   height: 40px;
+   border: 2px solid #0651a6;
+   border-radius: 50px;
+   color: #000;
+   cursor: pointer;
+   font-weight: bold;
+   background-color: rgba(255, 255, 255, 0);
+   overflow: hidden;
+   transition: transform 0.3s, color 0.3s;
+
+}
+.getstarted::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0651a6;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s;
+}
+.getstarted:hover {
+    color: #D9D9D9;
+    transform: scale(1.1);
+    border-width: 0; /* Remove border on hover */
+}
+
+.getstarted:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.slika1{
+    position: absolute;
+    width: 49%;
+    height: 85%;
+    top: 19%;
+    left: 51%;
+    object-fit: contain;
+}
+
+
+
+
+.skupkutiji {
+    position: absolute;
+    display: flex;
+    top: 22.8%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.kutija1,
+.kutija2,
+.kutija3 {
+    width: 330px;
+    height: 310px;
+    margin-right: 40px;
+    background-color:lightgray;
+    border-radius: 10px 10px 50px 50px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.progression{
+    position: absolute;
+    left: 6.3%;
+    top: 43.8%;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+.tekst1{
+    position: absolute;
+    left: 2.3%;
+    top: 58.8%;
+    color: black;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+.sat{
+    width: 6%;
+    position: absolute;
+    left: 12%;
+    top: 18%;
+    color: black;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+.kutija1:hover {
+    background-color: #0651a6;
+}
+
+.kutija1:hover .progression {
+    color: #D9D9D9;
+}
+
+.kutija1:hover .tekst1 {
+    color: #D9D9D9;
+}
+.kutija1:hover .sat {
+   content:url('gallery/clock\ \(4\).png');
+}
+
+.workout{
+    position: absolute;
+    left: 42.3%;
+    top: 43.8%;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+.tekst2{
+    position: absolute;
+    left: 35%;
+    top: 58.8%;
+    color: black;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+.utezi{
+    width: 6%;
+    position: absolute;
+    left: 45.5%;
+    top: 18%;
+    color: black;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+.kutija2:hover {
+    background-color: #0651a6;
+}
+
+.kutija2:hover .workout {
+    color: #D9D9D9;
+}
+
+.kutija2:hover .tekst2 {
+    color: #D9D9D9;
+}
+.kutija2:hover .utezi{
+    content:url('gallery/weightlifting\ \(2\).png');
+}
+.nutrition{
+    position: absolute;
+    left: 74.65%;
+    top: 43.8%;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+.tekst3{
+    position: absolute;
+    left: 69%;
+    top: 58.8%;
+    color: black;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+.plan{
+    width: 6%;
+    position: absolute;
+    left: 79.3%;
+    top: 18%;
+    color: black;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+.kutija3:hover {
+    background-color: #0651a6;
+}
+
+.kutija3:hover .nutrition {
+    color: #D9D9D9;
+}
+
+.kutija3:hover .tekst3 {
+    color: #D9D9D9;
+}
+.kutija3:hover .plan{
+    content:url('gallery/plan\ \(1\).png');
+}
+
+.banner{
+    position: absolute;
+    top: 66.7%;
+    left: 11%;
+    width: 150px;
+    height: 45px;
+    border: 2.2px solid #0651a6;
+    border-radius: 50px;
+    transition: 0.2s;
+    background-color: #0651a6;
+}
+
+.whoweare{
+    position: absolute;
+    top: 68.6%;
+    left: 12.5%;
+    transition: 0.2s;
+    color: #D9D9D9;
+    z-index: 1;
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: #D9D9D9;
+
+
+} 
+
+.naslov2{
+    position: absolute;
+    top: 76%;
+    left: 10.8%;
+    font-size: 38px;
+}
+.tekst4{
+    position: absolute;
+    top: 92%;
+    left: 10.8%;
+   opacity: 0.7;
+}
+.skup2{
+    position: absolute;
+    display: flex;
+    height: 60px;
+    left: 13%;
+    top: 110%;
+    
+}
+.skup2 img{
+    margin-right: 181px;
+   
+}
+.skup2 img.bench1{
+    margin-left: -14.5px; /* Prilagodite vrijednost prema vašim željama */
+}
+.skup3{
+    position: absolute;
+    display: flex;
+    height: 60px;
+    left: 10.8%;
+    top: 122%;
+    text-align: center;
+    font-weight: bold;
+}
+.skup3 p{
+    margin-right: 128px;
+}
+.zenatrci{
+    position: absolute;
+    left: 58%;
+    top: 60%;
+    object-fit: cover;
+}
+
+.linija2 {
+    width: 1.5px;
+    height: 200px;
+    background-color: black;
+    margin-right: 240px; /* Ako želite istu udaljenost za obje linije */
+    opacity: 0.2;
+}
+.linija1{
+    width: 1.5px;
+    height: 200px;
+    background-color: black;
+    margin-right: 240px; /* Ako želite istu udaljenost za obje linije */
+    opacity: 0.2;
+}
+
+.skuplinija {
+    position: absolute;
+    display: flex;
+    left: 24%;
+    top: 103%;
+}
+
+.skup4 {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Ovo postavlja tekst vertikalno */
+    font-size: 16px;
+    background-color: #0651a6;
+    border: 2.2px solid #0651a6;
+    border-radius: 50px;
+    width: 150px;
+    height: 45px;
+    color: #D9D9D9;
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: #D9D9D9;
+    text-align: center;
+}
+.team {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+}
+.expertteam{
+    position: absolute;
+    top: 66%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+    text-align: center;
+    opacity: 0.7;
+}
+.velikiskuptrenera {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 190px;
+    margin-top: 500px;
+}
+
+.skuptrener1,
+.skuptrener2,
+.skuptrener3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trener1,
+.trener2,
+.trener3 {
+    width: 250px; /* Prilagodite prema potrebi */
+    height: 400px; /* Prilagodite prema potrebi */
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: 0.3s;
+    cursor: pointer;
+    z-index: 1;
+    margin-left: 10px; /* Prilagodite prema potrebi */
+}
+
+.trener1:hover,
+.trener2:hover,
+.trener3:hover {
+    filter: grayscale(0%);
+}
+
+.kvadrat {
+    width: 320px;
+    height: 150px;
+    background-color: #D9D9D9;
+    border-radius: 10px 10px 50px 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 2;
+}
+
+.kvadrat p {
+    position: relative;
+    top: 22%;
+    margin-top: 5px;
+}
+
+.ime1,
+.ime2,
+.ime3 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.specijalnost,
+.specijalnost1,
+.specijalnost2 {
+    font-size: 13px;
+    opacity: 0.6;
+}
+
+.kvadrat i {
+    font-size: 20px;
+    margin-top: 50px;
+    margin-right: 1px;
+    cursor: pointer;
+}
+
+/* Prilagodbe za trener2 */
+.skuptrener2 {
+    margin-left: 25px; /* Prilagodite prema potrebi */
+    position: relative;
+    margin-top: -60px;
+}
+
+.trener2 {
+    width: 300px; /* Prilagodite prema potrebi */
+    height: 460px; /* Prilagodite prema potrebi */
+    margin-left: 0; /* Resetiraj margin-left */
+    position: relative;
+    left: 7%;
+}
+.skuptrener3{
+    margin-left: 25px;
+}
+.skup5{
+    position: absolute;
+    top: 75%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Ovo postavlja tekst vertikalno */
+    font-size: 16px;
+    background-color: #0651a6;
+    border: 2.2px solid #0651a6;
+    border-radius: 50px;
+    width: 160px;
+    height: 45px;
+    color: #D9D9D9;
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: #D9D9D9;
+    text-align: center;
+}
+.shapeofbody{
+    position: absolute;
+    top: 81%;
+    left: 54.5%;
+    font-size: 38px;
+}
+
+.atflex{
+    position: absolute;
+    top: 98%;
+    left: 54.8%;
+    opacity: 0.7;
+    font-size: 17px;
+}
+.krug1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    background-color:lightgray;
+    border-radius: 50px 50px 50px 50px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.krug1:hover{
+    background-color: #0651a6;
+    
+}
+.krug1:hover{
+    content: url(gallery/bodybuilding\ \(1\).png);
+}
