@@ -491,7 +491,6 @@ body{
     cursor: pointer;
 }
 
-/* Prilagodbe za trener2 */
 .skuptrener2 {
     margin-left: 25px; /* Prilagodite prema potrebi */
     position: relative;
@@ -544,9 +543,8 @@ body{
 }
 .krug1{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left:54%;
+    top: 15%;
     width: 70px;
     height: 70px;
     padding: 10px;
