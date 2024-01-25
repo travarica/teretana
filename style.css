@@ -541,23 +541,58 @@ body{
     opacity: 0.7;
     font-size: 17px;
 }
-.krug1{
+.velikikrug1{
     position: absolute;
-    left:54%;
     top: 15%;
+    left: 54%;
+    cursor: pointer;
+}
+.krug1{
+    background-color:lightgray;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     width: 70px;
     height: 70px;
-    padding: 10px;
-    background-color:lightgray;
-    border-radius: 50px 50px 50px 50px;
-    cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
+    margin-right: 50px;
 }
-.krug1:hover{
+.bodybuilder{
+    width: 6%;
+    position: absolute;
+    left: 8.5%;
+    top: 14.5%;
+    color: black;
+    width: 50px;
+}
+.velikikrug1:hover .krug1{
     background-color: #0651a6;
-    
 }
-.krug1:hover{
+.velikikrug1:hover .bodybuilder{
     content: url(gallery/bodybuilding\ \(1\).png);
+}
+.velikikrug2{
+    position: absolute;
+    top: 15%;
+    left: 74%;
+    cursor: pointer;
+}
+.krug2{
+    background-color:lightgray;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 70px;
+    height: 70px;
+}
+.gym-station{
+    width: 6%;
+    position: absolute;
+    left: 13.5%;
+    top: 13.5%;
+    color: black;
+    width: 50px; 
+}
+.velikikrug2:hover .krug2{
+    background-color: #0651a6;
+}
+.velikikrug2:hover .gym-station{
+    content: url(gallery/gym-station\ \(1\).png);
 }
