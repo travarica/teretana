@@ -65,7 +65,13 @@ body{
     width: 100vw;
     height: 100vh;
     display: flex;
-    
+    align-items: start;
+    position: relative;
+}
+.sekcija1{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
     align-items: start;
     position: relative;
 }
@@ -294,10 +300,9 @@ body{
     left: 11%;
     width: 150px;
     height: 45px;
-    border: 2.2px solid #0651a6;
     border-radius: 50px;
     transition: 0.2s;
-    background-color: #0651a6;
+    background-image: linear-gradient(to right, #0651a6 , #126dd4  ,#147cf2);
 }
 
 .whoweare{
@@ -391,8 +396,7 @@ body{
     justify-content: center;
     flex-direction: column; /* Ovo postavlja tekst vertikalno */
     font-size: 16px;
-    background-color: #0651a6;
-    border: 2.2px solid #0651a6;
+    background-image: linear-gradient(to right, #0651a6 , #126dd4  ,#147cf2);
     border-radius: 50px;
     width: 150px;
     height: 45px;
@@ -517,8 +521,7 @@ body{
     justify-content: center;
     flex-direction: column; /* Ovo postavlja tekst vertikalno */
     font-size: 16px;
-    background-color: #0651a6;
-    border: 2.2px solid #0651a6;
+    background-image: linear-gradient(to right, #0651a6 , #126dd4  ,#147cf2);
     border-radius: 50px;
     width: 160px;
     height: 45px;
@@ -682,13 +685,14 @@ body{
 }
 .deadlift{
     position: absolute;
-    left: 6%;
-    top:-35%;
+    left: 10%;
+    top:-45%;
     object-fit: cover;
+    width: 30%;
 }
 .skup6{
     position: absolute;
-    top: -30%;
+    top: -82%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -696,8 +700,7 @@ body{
     justify-content: center;
     flex-direction: column; /* Ovo postavlja tekst vertikalno */
     font-size: 16px;
-    background-color: #0651a6;
-    border: 2.2px solid #0651a6;
+    background-image: linear-gradient(to right, #0651a6 , #126dd4  ,#147cf2);
     border-radius: 50px;
     width: 160px;
     height: 45px;
@@ -710,28 +713,29 @@ body{
 
 .glavnakutija1{
     position: absolute;
-    top: 50%;
+    top: 5%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #D9D9D9;
-    border: 6px solid rgb(154, 151, 151);
+    background-image: linear-gradient(#0651a6 , #126dd4  ,#147cf2);
+    border: 6px solid rgb(154, 151, 151) hidden;
     width: 1100px;
     height: 380px;
     z-index: -2;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .kutija4{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #000;
+    background-color: #D9D9D9;
     width: 1000px;
     height: 300px;
     z-index: -1;
 }
 .kutija4 p{
     z-index: 1;
-    color: #D9D9D9;
+    color: #000;
    margin-left: 42%;
    position: relative;
    top: 30%;
@@ -751,7 +755,19 @@ body{
 .zanimanje{
     font-size: 15px;
 }
-/* memberships */
+
+.treadmill{
+    position: absolute;
+    left: 62.5%;
+    top: 50%;
+    width: 15%;
+    opacity: 0.7;
+    
+}
+
+
+
+/* login */
 .kocka3{
     width: 500px;
     height: 420px;
@@ -769,7 +785,7 @@ body{
 .welcomeback{
     text-align: center;
     position: relative;
-    top: 22%;
+    top: 145px;
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     
@@ -780,7 +796,7 @@ body{
     position: relative;
     -webkit-text-stroke-width: 0.4px;
     -webkit-text-stroke-color: #000;
-    top: 26%;
+    top: 180px;
     left: -10.5%;
 }
 .eouinput input{
@@ -801,7 +817,7 @@ body{
     position: relative;
     -webkit-text-stroke-width: 0.4px;
     -webkit-text-stroke-color: #000;
-    top: 34%;
+    top: 235px;
     left: -12.5%;
 
 }
@@ -838,7 +854,7 @@ width: 170px;
 height: 0.5px;
 background-color: #0075FF;
 position: relative;
-top: 29.5%;
+top: 200px;
 left: 41.5%;
 transform: translate(-50%, -50%);
 opacity: 0.6;
@@ -847,7 +863,7 @@ opacity: 0.6;
 .or{
     text-align: center;
     position: relative;
-    top: 28.3%;
+    top: 190px;
     font-size: smaller;
     opacity: 0.5;
     -webkit-text-stroke-width: 0.3px;
@@ -858,7 +874,7 @@ width: 170px;
 height: 0.5px;
 background-color: #0075FF;
 position: relative;
-top: 27.2%;
+top: 183px;
 left: 58.5%;
 transform: translate(-50%, -50%);
 opacity: 0.6;
@@ -909,4 +925,39 @@ opacity: 0.6;
 .passwordinput i.bx-lock-open-alt {
     /* Add your styles for bx-lock-open-alt here */
     color: #0075FF; /* Change color as needed */
+
+/*prekid log in */
+
+}
+.skup_strelica{
+    position: absolute;
+    display: flex;
+    left: 85%;
+    top: 75%;    
+}
+.skup_strelica i.bx-left-arrow-alt{
+   font-size: 25px;
+   color: #D9D9D9;
+   background-color: #0075FF;
+   padding: 10px;
+   border-style: none;
+   margin-right: 10px;
+   border:0.5px solid #0651a6;
+   cursor: pointer;
+}
+.skup_strelica i.bx-right-arrow-alt{
+   font-size: 25px;
+   color: #D9D9D9;
+   background-color: #0075FF;
+   padding: 10px;
+   border-style: none;
+   border:0.1px solid #0651a6;
+   cursor: pointer;
+   
+}
+.zenareview{
+    position: absolute;
+    top: -36%;
+    left:5%;
+    
 }
