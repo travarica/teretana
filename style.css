@@ -61,6 +61,38 @@ body{
     width: 100%;
 }
 
+@media only screen and (max-width: 480px) {
+    /* Your styles for mobile devices go here */
+    .header .home{
+         left: -125%;
+         top: 35px;
+         font-size: 15px;
+    }
+    .header .memberships {
+        top: -1px;
+        font-size: 15px;
+        left: -35%;
+    }
+    .navbar a.memberships:hover::before{
+        width: 255%;
+        left: -155%;
+    }
+    .header .gallery{
+        top: -18px;
+        font-size: 15px;
+        left: 5.5%;
+    }
+    .header .login{
+        top: -35.75px;
+        font-size: 15px;
+        left: 57%;
+    }
+    .logo{
+        width: 120px;
+        left: -40%;
+    }
+}
+
 .sekcija{
     width: 100vw;
     height: 100vh;
