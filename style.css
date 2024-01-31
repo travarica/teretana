@@ -961,3 +961,149 @@ opacity: 0.6;
     left:5%;
     
 }
+/*memberships*/
+.skupmemberships{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    gap: 55px;
+}
+.membership1{
+    background-color: #D9D9D9;
+    height: 400px;
+    width: 350px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px 10px 50px 50px;
+}
+.membership1 p{
+    text-align: center;
+}
+.monthly{
+    font-size: 25px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.students{
+    opacity: 0.7;
+    margin-top: 2%;
+}
+.price{
+    font-size: 50px;
+    margin-top: 15px;
+}
+.mogucnosti p{
+    text-align: left;
+    margin-left: 26%;
+    margin-top: 5px;
+    position: relative;
+    top: 20px;
+}
+.mogucnosti i.bx-badge-check{
+    font-size: 20px;
+    color: #0651a6;
+    position: relative;
+    top: 2.5px;
+}
+.join {
+    position: absolute;
+    left: 8%;
+    top: 82%;
+    width: 235px;
+    height: 40px;
+    border: 2px solid #0651a6;
+    border-radius: 50px;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0);
+    overflow: hidden;
+    transition: transform 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.join::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0651a6;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s;
+}
+
+.join:hover {
+    color: #D9D9D9;
+    transform: scale(1.1);
+    border-width: 0; 
+    box-shadow: 0 0 10px rgba(6, 81, 166, 0.3); 
+}
+
+.join:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.membership2{
+    background-color: #D9D9D9;
+    height: 400px;
+    width: 350px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px 10px 50px 50px;
+}
+.membership2 p{
+    text-align: center;
+}
+.mogucnosti p{
+    text-align: left;
+    margin-left: 26%;
+    margin-top: 5px;
+    position: relative;
+    top: 20px;
+}
+.join2 {
+    position: absolute;
+    left: 61.2%;
+    top: 82%;
+    width: 235px;
+    height: 40px;
+    border: 2px solid #0651a6;
+    border-radius: 50px;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0);
+    overflow: hidden;
+    transition: transform 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.join2::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0651a6;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s;
+}
+
+.join2:hover {
+    color: #D9D9D9;
+    transform: scale(1.1);
+    border-width: 0; 
+    box-shadow: 0 0 10px rgba(6, 81, 166, 0.3); 
+}
+
+.join2:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
